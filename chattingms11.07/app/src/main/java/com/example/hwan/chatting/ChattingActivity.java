@@ -28,7 +28,7 @@ public class ChattingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatting);
-    //s
+
         sendChatText = (EditText)findViewById(R.id.chat_content);
         sendButton = (Button)findViewById(R.id.send_btn);
         receiveMessage = (TextView)findViewById(R.id.chat_received);
