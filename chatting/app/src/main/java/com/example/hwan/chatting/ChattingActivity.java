@@ -17,7 +17,7 @@ import io.socket.emitter.Emitter;
 
 public class ChattingActivity extends AppCompatActivity {
 
-    final int userKey = 1;
+    final int userKey = 3;
     EditText sendChatText;
     Button sendButton;
     TextView receiveMessage;
@@ -28,7 +28,7 @@ public class ChattingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatting);
-
+    //s
         sendChatText = (EditText)findViewById(R.id.chat_content);
         sendButton = (Button)findViewById(R.id.send_btn);
         receiveMessage = (TextView)findViewById(R.id.chat_received);
@@ -74,7 +74,7 @@ public class ChattingActivity extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        if(key.equals("1")){
+                        if(key.equals("3")){
                             myMessage.append(msg+"\n");
                         }
                         else
