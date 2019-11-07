@@ -15,9 +15,9 @@ import io.socket.client.IO;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
-public class MainActivity extends AppCompatActivity {
+public class ChattingActivity extends AppCompatActivity {
 
-    final int userKey = 3;
+    final int userKey = 1;
     EditText sendChatText;
     Button sendButton;
     TextView receiveMessage;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_chatting);
 
         sendChatText = (EditText)findViewById(R.id.chat_content);
         sendButton = (Button)findViewById(R.id.send_btn);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         myMessage = (TextView)findViewById(R.id.mychat_received);
 
         try {
-            socket = IO.socket("http://192.168.0.18:9000"); //로컬호스트 ip주소 수정하기
+            socket = IO.socket("http://192.168.0.3:9000"); //로컬호스트 ip주소 수정하기
         }catch (Exception e) {
             Log.i("THREADSERVICE", "Server not connected");
             e.printStackTrace();
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        if(key.equals("3")){
+                        if(key.equals("1")){
                             myMessage.append(msg+"\n");
                         }
                         else
