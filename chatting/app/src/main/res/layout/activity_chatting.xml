@@ -29,17 +29,26 @@
                 android:layout_below="@+id/send_btn"
                 android:text="나의 메시지\n\n" />
         </LinearLayout>
-        <EditText
-            android:id="@+id/chat_content"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
-        <Button
-            android:id="@+id/send_btn"
-            android:gravity="center_horizontal"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="전송"
-            android:layout_below="@+id/chat_content"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/chat_content"
+                android:layout_width="295dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/chat_content"
+                android:gravity="center_horizontal"
+                android:text="전송" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
