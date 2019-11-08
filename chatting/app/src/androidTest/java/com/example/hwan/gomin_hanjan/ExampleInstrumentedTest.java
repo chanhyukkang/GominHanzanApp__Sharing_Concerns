@@ -1,4 +1,4 @@
-package com.example.hwan.chatting;
+package com.example.hwan.gomin_hanjan;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

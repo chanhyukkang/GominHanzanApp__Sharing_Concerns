@@ -1,4 +1,4 @@
-package com.example.hwan.chatting;
+package com.example.hotsix.gomin_hanjan;
 
 import java.util.List;
 

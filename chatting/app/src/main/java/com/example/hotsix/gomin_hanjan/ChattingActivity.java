@@ -1,4 +1,4 @@
-package com.example.hwan.chatting;
+package com.example.hotsix.gomin_hanjan;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.hwan.chatting.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,7 +37,7 @@ public class ChattingActivity extends AppCompatActivity {
         myMessage = (TextView)findViewById(R.id.mychat_received);
 
         try {
-            socket = IO.socket("http://192.168.0.3:9000"); //로컬호스트 ip주소 수정하기
+            socket = IO.socket("http://192.168.0.18:9000"); //로컬호스트 ip주소 수정하기
         }catch (Exception e) {
             Log.i("THREADSERVICE", "Server not connected");
             e.printStackTrace();

@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChattingActivity" />
-        <activity android:name=".Login" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SplashActivity"
+        <activity android:name="com.example.hotsix.gomin_hanjan.ChattingActivity" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.ChattingRoom" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Login" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.SignUp" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

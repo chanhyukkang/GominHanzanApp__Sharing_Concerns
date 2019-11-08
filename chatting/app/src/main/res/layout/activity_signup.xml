@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context="com.example.hotsix.gomin_hanjan.SignUp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,6 +122,20 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="회원가입" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/backbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="뒤로가기" />
 
             </LinearLayout>
 

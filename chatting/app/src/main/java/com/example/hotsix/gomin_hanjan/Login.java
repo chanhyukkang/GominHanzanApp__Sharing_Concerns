@@ -1,4 +1,4 @@
-package com.example.hwan.chatting;
+package com.example.hotsix.gomin_hanjan;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.hwan.chatting.R;
 
 import java.util.List;
 
@@ -30,8 +32,9 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         final EditText id = (EditText) findViewById(R.id.edittext_id);
         final EditText password = (EditText) findViewById(R.id.edittext_password);
-        getButton = (Button) findViewById(R.id.button_login);
-        getButton.setOnClickListener(new View.OnClickListener() {
+        Button login = (Button) findViewById(R.id.button_login);
+        Button signup = (Button) findViewById(R.id.button_signup);
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Retrofit retrofit = new Retrofit.Builder()
@@ -44,6 +47,15 @@ public class Login extends AppCompatActivity {
                 String password1 = String.valueOf(password.getText().toString());
                 Call<List<Dummy>> call = service.listDummies(id1, password1);
                 call.enqueue(dummies);
+            }
+        });
+
+        signup.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),SignUp.class);
+                startActivityForResult(intent,100);
             }
         });
     }
@@ -60,8 +72,17 @@ public class Login extends AppCompatActivity {
                 }
                 if(builder.toString().equals("1")){
                     Toast.makeText(getApplicationContext(), "Login", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),ChattingActivity.class);
+                    Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
                     startActivityForResult(intent,100);
+                }
+                else if(builder.toString().equals("2")){
+                    Toast.makeText(getApplicationContext(), "ID, Password를 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("3")){
+                    Toast.makeText(getApplicationContext(), "ID를 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("4")){
+                    Toast.makeText(getApplicationContext(), "Password를 입력하세요", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "Not Login", Toast.LENGTH_SHORT).show();
@@ -76,4 +97,5 @@ public class Login extends AppCompatActivity {
             info.setText("Fail");
         }
     };
+
 }
