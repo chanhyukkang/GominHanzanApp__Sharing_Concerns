@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hwan.chatting.R;
@@ -24,6 +26,7 @@ public class SignUp extends AppCompatActivity {
     EditText name, age, sex, id, password, password2;
     Button signup, idConfirm, backbutton;
     Intent intent;
+    RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         name = (EditText)findViewById(R.id.name);
-        sex = (EditText)findViewById(R.id.sex);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         age = (EditText)findViewById(R.id.age);
         id = (EditText)findViewById(R.id.id);
         password = (EditText)findViewById(R.id.password);
@@ -50,11 +53,19 @@ public class SignUp extends AppCompatActivity {
 
                 SignUpInterface signUpInterface = retrofit.create(SignUpInterface.class);
                 String name1 = String.valueOf(name.getText().toString());
-                String sex1 = String.valueOf(sex.getText().toString());
+                RadioButton rd = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
+                String sex1 = rd.getText().toString();
+                if(sex1.equals("남")){
+                    sex1="0";
+                }
+                else if(sex1.equals("여")){
+                    sex1 = "1";
+                }
                 String age1 = String.valueOf(age.getText().toString());
                 String id1 = String.valueOf(id.getText().toString());
                 String password_1 = String.valueOf(password.getText().toString());
                 String password_2 = String.valueOf(password2.getText().toString());
+
                 Call<List<Dummy>> call = signUpInterface.listDummies(name1, sex1, age1, id1, password_1, password_2);
                 call.enqueue(dummies);
             }
@@ -95,10 +106,33 @@ public class SignUp extends AppCompatActivity {
                     builder.append(dummy.toString());
                 }
                 if(builder.toString().equals("0")){
+                    Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(),Login.class);
+                    startActivityForResult(intent,100);
+                }
+                else if(builder.toString().equals("1")){
                     Toast.makeText(getApplicationContext(), "ID가 중복입니다", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_SHORT).show();
+                else if(builder.toString().equals("2")){
+                    Toast.makeText(getApplicationContext(), "이름을 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("3")){
+                    Toast.makeText(getApplicationContext(), "성별을 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("4")){
+                    Toast.makeText(getApplicationContext(), "나이를 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("5")){
+                    Toast.makeText(getApplicationContext(), "ID를 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("6")){
+                    Toast.makeText(getApplicationContext(), "비밀번호를 입력하세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("7")){
+                    Toast.makeText(getApplicationContext(), "비밀번호 확인해주세요", Toast.LENGTH_SHORT).show();
+                }
+                else if(builder.toString().equals("8")){
+                    Toast.makeText(getApplicationContext(), "비밀번호가 서로 다릅니다", Toast.LENGTH_SHORT).show();
                 }
             }
         }

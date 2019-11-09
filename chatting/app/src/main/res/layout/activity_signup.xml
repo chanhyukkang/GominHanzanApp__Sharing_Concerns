@@ -17,29 +17,45 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:gravity="center_vertical">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="이름" />
+
                 <EditText
                     android:id="@+id/name"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="성별" />
 
-                <EditText
-                    android:id="@+id/sex"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="남" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="여" />
+                </RadioGroup>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -91,6 +107,7 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:password="true"
                     android:layout_marginLeft="16dp"/>
 
             </LinearLayout>
@@ -108,6 +125,7 @@
                     android:id="@+id/password2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:password="true"
                     android:layout_marginLeft="16dp"/>
             </LinearLayout>
 

@@ -23,8 +23,9 @@ public class Login extends AppCompatActivity {
     private static final String BASE = "http://192.168.0.18:3000";
 
     EditText position;
-    Button getButton;
+    Button getButton, button_developer;
     TextView info;
+    String info_id, info_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class Login extends AppCompatActivity {
         final EditText password = (EditText) findViewById(R.id.edittext_password);
         Button login = (Button) findViewById(R.id.button_login);
         Button signup = (Button) findViewById(R.id.button_signup);
+        Button button_developer = (Button) findViewById(R.id.button_developer);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,8 @@ public class Login extends AppCompatActivity {
                 GetService service = retrofit.create(GetService.class);
                 String id1 = String.valueOf(id.getText().toString());
                 String password1 = String.valueOf(password.getText().toString());
+                info_id=id1;
+                info_password=password1;
                 Call<List<Dummy>> call = service.listDummies(id1, password1);
                 call.enqueue(dummies);
             }
@@ -55,6 +59,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),SignUp.class);
+                startActivityForResult(intent,100);
+            }
+        });
+
+        button_developer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
                 startActivityForResult(intent,100);
             }
         });
@@ -72,7 +84,9 @@ public class Login extends AppCompatActivity {
                 }
                 if(builder.toString().equals("1")){
                     Toast.makeText(getApplicationContext(), "Login", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
+                    Intent intent = new Intent(getApplicationContext(),ChattingRoomMake.class);
+                    String[] information = new String[] {info_id, info_password};
+                    intent.putExtra("strings", information);
                     startActivityForResult(intent,100);
                 }
                 else if(builder.toString().equals("2")){
@@ -85,7 +99,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Password를 입력하세요", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), "Not Login", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "회원가입을 해주세요", Toast.LENGTH_SHORT).show();
                 }
             } else {
                 info.setText("Fail, " + String.valueOf(response.code()));

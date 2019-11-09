@@ -23,6 +23,7 @@
             android:id="@+id/edittext_password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:password="true"
             android:hint="PASSWORD:"/>
 
         <Button
@@ -37,6 +38,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SIGNUP"
+            android:textColor="#4CAF50" />
+
+        <Button
+            android:id="@+id/button_developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개발자 모드"
             android:textColor="#4CAF50" />
 
     </LinearLayout>
