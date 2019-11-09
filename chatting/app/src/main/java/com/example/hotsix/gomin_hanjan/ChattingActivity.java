@@ -1,5 +1,6 @@
 package com.example.hotsix.gomin_hanjan;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +22,7 @@ public class ChattingActivity extends AppCompatActivity {
 
     final int userKey = 1;
     EditText sendChatText;
-    Button sendButton;
+    Button sendButton, backbutton;
     TextView receiveMessage;
     TextView myMessage;
     private Socket socket;
@@ -35,6 +36,7 @@ public class ChattingActivity extends AppCompatActivity {
         sendButton = (Button)findViewById(R.id.send_btn);
         receiveMessage = (TextView)findViewById(R.id.chat_received);
         myMessage = (TextView)findViewById(R.id.mychat_received);
+        backbutton = (Button)findViewById(R.id.backbutton);
 
         try {
             socket = IO.socket("http://192.168.0.18:9000"); //로컬호스트 ip주소 수정하기
@@ -57,6 +59,14 @@ public class ChattingActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
+                startActivityForResult(intent,100);
             }
         });
 

@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hwan.chatting.R;
@@ -24,7 +23,6 @@ public class Login extends AppCompatActivity {
 
     EditText position;
     Button getButton, button_developer;
-    TextView info;
     String info_id, info_password;
 
     @Override
@@ -101,14 +99,12 @@ public class Login extends AppCompatActivity {
                 else{
                     Toast.makeText(getApplicationContext(), "회원가입을 해주세요", Toast.LENGTH_SHORT).show();
                 }
-            } else {
-                info.setText("Fail, " + String.valueOf(response.code()));
             }
         }
 
         @Override
         public void onFailure(Call<List<Dummy>> call, Throwable t) {
-            info.setText("Fail");
+
         }
     };
 
