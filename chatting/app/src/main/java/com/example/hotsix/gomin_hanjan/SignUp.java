@@ -134,6 +134,9 @@ public class SignUp extends AppCompatActivity {
                 else if(builder.toString().equals("8")){
                     Toast.makeText(getApplicationContext(), "비밀번호가 서로 다릅니다", Toast.LENGTH_SHORT).show();
                 }
+                else if(builder.toString().equals("9")){
+                    Toast.makeText(getApplicationContext(), "ID 중복확인 해주세요", Toast.LENGTH_SHORT).show();
+                }
             }
         }
 

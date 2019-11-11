@@ -65,6 +65,8 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
+                String[] information = new String[] {"admin", "admin"};
+                intent.putExtra("strings", information);
                 startActivityForResult(intent,100);
             }
         });
@@ -82,7 +84,7 @@ public class Login extends AppCompatActivity {
                 }
                 if(builder.toString().equals("1")){
                     Toast.makeText(getApplicationContext(), "Login", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),ChattingRoomMake.class);
+                    Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
                     String[] information = new String[] {info_id, info_password};
                     intent.putExtra("strings", information);
                     startActivityForResult(intent,100);

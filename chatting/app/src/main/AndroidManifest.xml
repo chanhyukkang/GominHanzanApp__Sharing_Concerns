@@ -16,6 +16,8 @@
         <activity android:name="com.example.hotsix.gomin_hanjan.ChattingRoomMake" />
         <activity android:name="com.example.hotsix.gomin_hanjan.Login" />
         <activity android:name="com.example.hotsix.gomin_hanjan.SignUp" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.WritePost" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.ReadPost" />
         <activity android:name="com.example.hotsix.gomin_hanjan.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>

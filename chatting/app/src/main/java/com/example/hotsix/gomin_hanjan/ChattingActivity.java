@@ -38,6 +38,9 @@ public class ChattingActivity extends AppCompatActivity {
         myMessage = (TextView)findViewById(R.id.mychat_received);
         backbutton = (Button)findViewById(R.id.backbutton);
 
+        Intent intent1 = getIntent();
+        final String[] userInfo = intent1.getStringArrayExtra("strings");
+
         try {
             socket = IO.socket("http://192.168.0.18:9000"); //로컬호스트 ip주소 수정하기
         }catch (Exception e) {
@@ -66,6 +69,8 @@ public class ChattingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),ChattingRoom.class);
+                String[] information = new String[] {userInfo[0], userInfo[1]};
+                intent.putExtra("strings", information);
                 startActivityForResult(intent,100);
             }
         });
