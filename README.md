@@ -34,26 +34,26 @@
 
 ### 사용성 평가
 - System Usability Scale의 10개 문항으로 사용성 측정.
-| Subject  | Sus Score | Average |  
-|--------- |----------------------------------------------------------------|-------|
-| 고민한잔 | 90, 62.5, 70, 80, 72.5, 65, 87.5, 80, 90, 77.5, 92.5, 77.5, 80 | 78.8 | 
-| 오픈채팅 | 65, 55, 75, 80, 67.5, 65, 40, 47.5, 77.5, 82.5, 87.5, 60, 60  | 66.3 | 
-| 1 | 2 | 3 | 4 | 5 |
-|---|---|---|---|---|
-| a | b | c | d | e |
-| f | g | h | i | j |
-| k | l | m | n | o |
+Between Subjects Study 총 26명.
+
+고민한잔 
+90, 62.5, 70, 80, 72.5, 65, 87.5, 80, 90, 77.5, 92.5, 77.5, 80 
+평균 78.8
+오픈채팅
+65, 55, 75, 80, 67.5, 65, 40, 47.5, 77.5, 82.5, 87.5, 60, 60
+평균 66.3 
+
 Python SciPy패키지로 t-test 결과 p-value=0.015, t-value=2.657, dof=24로 (유의수준5%)
 사용성이 유의미하게 차이가 있다는 결과를 얻음.
 
 ### 단계별 GUI
 
-<img src = "https://user-images.githubusercontent.com/48430005/105447433-8714f400-5cb7-11eb-92d8-0342e08f1dfb.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447436-88deb780-5cb7-11eb-904d-235e6d146bb9.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447438-8a0fe480-5cb7-11eb-9c11-b4fc76bdf626.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447441-8b411180-5cb7-11eb-9cce-948596957950.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447444-8da36b80-5cb7-11eb-85c5-8abf3002df79.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447448-8ed49880-5cb7-11eb-9681-3f92c7d2c234.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447452-909e5c00-5cb7-11eb-91a5-ad1e73a26280.jpg" >
-<img src = "https://user-images.githubusercontent.com/48430005/105447456-9300b600-5cb7-11eb-8c12-c6947132182e.jpg" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448916-98133480-5cba-11eb-9880-a37f20fb95df.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448917-98abcb00-5cba-11eb-8acf-43e152dc9e11.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448919-99446180-5cba-11eb-8ca9-97a117ac1945.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448921-99446180-5cba-11eb-92ff-a2d3e4aea7fe.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448922-99dcf800-5cba-11eb-9975-a10d1f120f33.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448924-9a758e80-5cba-11eb-91ab-851b9190cc23.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448926-9b0e2500-5cba-11eb-92aa-9925b96d3718.png" >
+<img src = "https://user-images.githubusercontent.com/48430005/105448912-96e20780-5cba-11eb-8de1-019dd505d880.png" >
 
