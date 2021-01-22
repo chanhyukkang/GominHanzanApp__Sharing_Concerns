@@ -30,11 +30,11 @@
 <img src = "https://user-images.githubusercontent.com/48430005/105446745-1a4d2a00-5cb6-11eb-891e-33301e848302.jpg" width="300px">
 
 ### 개발 환경
-<img src = "https://user-images.githubusercontent.com/48430005/105446695-fe498880-5cb5-11eb-8ceb-685304ee6664.jpg" width="500px">
+<img src = "https://user-images.githubusercontent.com/48430005/105446695-fe498880-5cb5-11eb-8ceb-685304ee6664.jpg" width="400px">
 
 ### 사용성 평가
 - System Usability Scale의 10개 문항으로 사용성 측정.
-Subject | Sus Score | Average |  
+| Subject | Sus Score | Average |  
 |---------|-----------|---------|
 |고민한잔|90, 62.5, 70, 80, 72.5, 65, 87.5, 80, 90, 77.5, 92.5, 77.5, 80| 78.8 | 
 |오픈채팅|65, 55, 75, 80, 67.5, 65, 40, 47.5, 77.5, 82.5, 87.5, 60, 60| 66.3 | 
