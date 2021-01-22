@@ -26,10 +26,11 @@
 - 제한 기능 : 희망하는 사용자끼리 대화할 수 있음
 - 주제별 분류 : 원하는 고민을 선택해 사용성을 높임
 - 감정 이모티콘 : 대면(서로 얼굴을 보며) 대화하는 효과를 줌
-![그림10](https://user-images.githubusercontent.com/48430005/105446745-1a4d2a00-5cb6-11eb-891e-33301e848302.jpg) {: width="180" height="100"}
+
+<img src = "https://user-images.githubusercontent.com/48430005/105446745-1a4d2a00-5cb6-11eb-891e-33301e848302.jpg" width="180px">
 
 ### 개발 환경
-![개발](https://user-images.githubusercontent.com/48430005/105446695-fe498880-5cb5-11eb-8ceb-685304ee6664.jpg) {: width="250" height="200"}
+<img src = "https://user-images.githubusercontent.com/48430005/105446695-fe498880-5cb5-11eb-8ceb-685304ee6664.jpg" width="300px">
 
 ### 사용성 평가
 - System Usability Scale의 10개 문항으로 사용성 측정.
@@ -41,12 +42,12 @@ Python SciPy패키지로 t-test 결과 p-value=0.015, t-value=2.657, dof=24로 (
 
 ### 단계별 GUI
 
-![그림1](https://user-images.githubusercontent.com/48430005/105447433-8714f400-5cb7-11eb-92d8-0342e08f1dfb.jpg) {: width="150" height="200"}
-![그림2](https://user-images.githubusercontent.com/48430005/105447436-88deb780-5cb7-11eb-904d-235e6d146bb9.jpg) {: width="150" height="200"}
-![그림3](https://user-images.githubusercontent.com/48430005/105447438-8a0fe480-5cb7-11eb-9c11-b4fc76bdf626.jpg){: width="150" height="200"}
-![그림4](https://user-images.githubusercontent.com/48430005/105447441-8b411180-5cb7-11eb-9cce-948596957950.jpg){: width="150" height="200"}
-![그림5](https://user-images.githubusercontent.com/48430005/105447444-8da36b80-5cb7-11eb-85c5-8abf3002df79.jpg){: width="150" height="200"}
-![그림6](https://user-images.githubusercontent.com/48430005/105447448-8ed49880-5cb7-11eb-9681-3f92c7d2c234.jpg){: width="150" height="200"}
-![그림7](https://user-images.githubusercontent.com/48430005/105447452-909e5c00-5cb7-11eb-91a5-ad1e73a26280.jpg){: width="150" height="200"}
-![그림9](https://user-images.githubusercontent.com/48430005/105447456-9300b600-5cb7-11eb-8c12-c6947132182e.jpg){: width="150" height="200"}
+<img src = "https://user-images.githubusercontent.com/48430005/105447433-8714f400-5cb7-11eb-92d8-0342e08f1dfb.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447436-88deb780-5cb7-11eb-904d-235e6d146bb9.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447438-8a0fe480-5cb7-11eb-9c11-b4fc76bdf626.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447441-8b411180-5cb7-11eb-9cce-948596957950.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447444-8da36b80-5cb7-11eb-85c5-8abf3002df79.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447448-8ed49880-5cb7-11eb-9681-3f92c7d2c234.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447452-909e5c00-5cb7-11eb-91a5-ad1e73a26280.jpg" width="200px">
+<img src = "https://user-images.githubusercontent.com/48430005/105447456-9300b600-5cb7-11eb-8c12-c6947132182e.jpg" width="200px">
 
