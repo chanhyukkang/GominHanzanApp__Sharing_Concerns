@@ -27,8 +27,9 @@
 - 주제별 분류 : 원하는 고민을 선택해 사용성을 높임
 - 감정 이모티콘 : 대면(서로 얼굴을 보며) 대화하는 효과를 줌
 
-<img src = "https://user-images.githubusercontent.com/48430005/105446745-1a4d2a00-5cb6-11eb-891e-33301e848302.jpg" width="400px">   
-##### 폴에크먼의 기본 6가지 감정 기반 감정 이모티콘(놀람, 두려움, 기쁨, 슬픔, 분노, 싫음)
+<img src = "https://user-images.githubusercontent.com/48430005/105446745-1a4d2a00-5cb6-11eb-891e-33301e848302.jpg" width="400px">  
+
+#### 폴에크먼의 기본 6가지 감정 기반 감정 이모티콘(놀람, 두려움, 기쁨, 슬픔, 분노, 싫음)
 
 ### 개발 환경
 <img src = "https://user-images.githubusercontent.com/48430005/105446695-fe498880-5cb5-11eb-8ceb-685304ee6664.jpg" width="400px">
